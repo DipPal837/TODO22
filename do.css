@@ -1,0 +1,103 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Segoe UI",sans-serif;
+}
+
+body
+{
+    background: #f4f4f4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container
+{
+    background: white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.1);
+    width:100%;
+    max-width:500px;
+}
+
+h1
+{
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+.input-section
+{
+    display:flex;
+    gap: 10px;
+}
+.input-section input
+{
+    flex:1;
+    padding:10px;
+    border:2px solid #ddd;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.input-section button
+{
+    padding:10px 20px;
+    background-color: #007bff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+
+}
+
+.input-section button:hover
+{
+    background-color:#0056b3;
+
+}
+#task-list
+{
+    list-style:none;
+    margin-top:20px;
+}
+#task-list li
+{
+    padding:10px;
+    border-bottom: 1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+#task-list li button
+{
+    background:red;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    border-radius:4px;
+    cursor:pointer;
+
+}
+
+@media(max-width:500px)
+{
+    .input-section
+    {
+        flex-direction:column;
+    }
+    .input-section button
+    {
+        width:100%;
+    }
+}
